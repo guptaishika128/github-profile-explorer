@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85); /* Slight transparency */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4b0082;
+    animation: slideDown 1s ease-in-out;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.search input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.search input:focus {
+    box-shadow: 0 0 10px rgba(75, 0, 130, 0.5);
+    border-color: #4b0082;
+}
+
+.search button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    border: none;
+    background-color: #4b0082;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search button:hover {
+    background-color: #3a006b;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #e1e4e8;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    margin-right: 20px;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.profile-card h2 {
+    margin: 0 0 10px;
+}
+
+.profile-card p {
+    margin: 5px 0;
+}
+
+.repository-card {
+    border: 1px solid #e1e4e8;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.repository-card h3 {
+    margin-top: 0;
+}
+
+.repository-card p {
+    margin: 5px 0;
+}
+
+.repository-card a {
+    color: #0366d6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.repository-card a:hover {
+    color: #024c9c;
+}
+
+.error {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
